@@ -29,6 +29,10 @@
             android:name=".LoginFile"
             android:exported="true" />
 
+        <activity
+            android:name=".SignupFile"
+            android:exported="true" />
+
 
     </application>
 
