@@ -69,112 +69,135 @@
 
     <LinearLayout
         android:id="@+id/stories"
+        android:layout_below="@id/top_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10px"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:weightSum="4"
-        android:layout_below="@id/top_bar">
+        android:orientation="vertical">
 
-
-
-        <LinearLayout
-            android:layout_width="80dp"
+        <HorizontalScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-            <ImageView
-                android:layout_width="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/profileicon"
-                android:layout_weight="1" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Samantha"
-                android:gravity="center"/>
+                android:orientation="horizontal"
+                android:padding="10dp">
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/profileicon"
-                android:layout_weight="1" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Samantha"
-                android:gravity="center"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/profileicon"
+                        android:scaleType="centerCrop" />
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/profileicon"
-                android:layout_weight="1" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Samantha"
-                android:gravity="center"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/profileicon"
-                android:layout_weight="1" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Samantha"
-                android:gravity="center"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/profileicon"
-                android:layout_weight="1" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Samantha"
-                android:gravity="center"/>
-
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Samantha"
+                        android:gravity="center"/>
+                </LinearLayout>
 
 
 
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/profileicon"
+                        android:scaleType="centerCrop" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alex"
+                        android:gravity="center"/>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/profileicon"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alex"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/profileicon"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alex"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/profileicon"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="John"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/profileicon"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Emily"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
     </LinearLayout>
 
 
@@ -257,7 +280,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_below="@id/profilebar"
-            android:layout_height="520dp"
+            android:layout_height="480dp"
             android:src="@drawable/temp_image"
             android:scaleType="centerInside"
             />
