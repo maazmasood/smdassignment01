@@ -17,7 +17,7 @@ class ActivitySplash : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish() // close splash so user can’t go back to it
+            finish()
         }, 5000)
 
     }
