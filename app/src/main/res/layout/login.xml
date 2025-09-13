@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+
+    <ImageView
+        android:id="@+id/logoimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:hint="username"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="password"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot password"
+        android:textColor="#A44C4C"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="textEnd"
+        />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#A44C4C"
+        android:text="Log in"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="Don’t have an account?"
+            android:textColor="#A44C4C"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text=" Signup"
+            android:textColor="#A44C4C"
+            android:id="@+id/signuptext"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
