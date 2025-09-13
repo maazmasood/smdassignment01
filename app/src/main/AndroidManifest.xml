@@ -33,6 +33,18 @@
             android:name=".SignupFile"
             android:exported="true" />
 
+        <activity
+            android:name=".AppMainScreen"
+            android:exported="true" />
+
+        <activity
+            android:name=".AppSearchPage"
+            android:exported="true" />
+
+        <activity
+            android:name=".AppSearchFilter"
+            android:exported="true" />
+
 
     </application>
 

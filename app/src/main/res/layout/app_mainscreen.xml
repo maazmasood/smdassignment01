@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,9 +12,11 @@
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginTop="100px"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:background="@android:color/white"
+        android:weightSum="7"
+        android:background="@android:color/transparent"
       >
 
 
@@ -34,14 +36,14 @@
             android:textSize="32dp"
             android:textColor="@android:color/black"
             android:gravity="center"
-            android:layout_weight="6"
+            android:layout_weight="4"
             />
 
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="2"
             android:orientation="horizontal"
             android:gravity="end|center_vertical">
 
@@ -50,15 +52,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@drawable/reelicon"
-                android:contentDescription="Right1" />
+                android:scaleType="centerInside"/>
 
             <ImageView
                 android:id="@+id/nav_right2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@drawable/msgicon"
-
-                android:contentDescription="Right2" />
+                android:scaleType="centerInside" />
         </LinearLayout>
 
     </LinearLayout>
@@ -176,13 +177,204 @@
 
     </LinearLayout>
 
+
+    <!-- profile above image -->
+    <LinearLayout
+        android:id="@+id/profilebar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="5"
+        android:layout_below="@id/stories"
+        android:background="@android:color/transparent"
+        >
+
+
+        <ImageView
+            android:id="@+id/dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/profileicon"
+            android:scaleType="centerInside"
+            android:contentDescription="Left" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Joshua_1"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tokyo, Japan"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:gravity="end|center_vertical">
+
+            <ImageView
+                android:id="@+id/rightthreedoticon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/threedots"
+                android:scaleType="centerInside"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/emma_watson"
+        android:layout_width="match_parent"
+        android:layout_below="@id/profilebar"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_below="@id/profilebar"
+            android:layout_height="520dp"
+            android:src="@drawable/temp_image"
+            android:scaleType="centerInside"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/reactionbar"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:src="@drawable/heartshape"
+                    android:scaleType="centerInside" />
+
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+
+                    android:scaleType="centerInside"
+                    android:src="@drawable/commentshape" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/shareshape"
+                    android:scaleType="centerInside"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/threedots"
+
+                    android:scaleType="centerInside"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/saveshape"
+                android:scaleType="centerInside"
+                android:contentDescription="Save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Joshua_1"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The game in japan was amazing i'm sharing some photos"
+                android:textSize="18dp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
     <!-- botton navigation -->
 
 
     <LinearLayout
         android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
         android:background="@android:color/white"
@@ -197,7 +389,8 @@
             android:layout_weight="1"
             android:src="@drawable/homeicon"
             android:background="@android:color/transparent"
-            />
+            android:scaleType="centerInside" />
+
 
         <ImageButton
             android:id="@+id/nav_search"
@@ -206,6 +399,7 @@
             android:layout_weight="1"
             android:src="@drawable/searchicon"
             android:background="@android:color/transparent"
+            android:scaleType="centerInside"
             />
 
         <ImageButton
@@ -215,6 +409,7 @@
             android:layout_weight="1"
             android:src="@drawable/plusinboxicon"
             android:background="@android:color/transparent"
+            android:scaleType="centerInside"
             />
 
         <ImageButton
@@ -224,15 +419,17 @@
             android:layout_weight="1"
             android:src="@drawable/hearticon"
             android:background="@android:color/transparent"
+            android:scaleType="centerInside"
            />
 
         <ImageButton
             android:id="@+id/nav_profile"
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
             android:src="@drawable/profileicon"
             android:background="@android:color/transparent"
+            android:scaleType="centerInside"
           />
 
 
