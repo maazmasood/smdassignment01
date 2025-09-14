@@ -45,6 +45,14 @@
             android:name=".AppSearchFilter"
             android:exported="true" />
 
+        <activity
+            android:name=".AppMsgScreen"
+            android:exported="true" />
+
+        <activity
+            android:name=".AppCallScreen"
+            android:exported="true" />
+
 
     </application>
 

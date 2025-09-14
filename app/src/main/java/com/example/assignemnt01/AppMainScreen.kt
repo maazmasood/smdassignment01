@@ -5,6 +5,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.widget.ImageButton
+import android.widget.ImageView
+
 
 class AppMainScreen : AppCompatActivity() {
 
@@ -20,6 +22,12 @@ class AppMainScreen : AppCompatActivity() {
         startActivity(intent)
     }
 
+
+        val msgbutton = findViewById<ImageView>(R.id.nav_right2)
+        msgbutton.setOnClickListener {
+            val intent = Intent(this, AppMsgScreen::class.java)
+            startActivity(intent)
+        }
 
     }
 }
