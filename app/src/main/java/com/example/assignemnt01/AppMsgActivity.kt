@@ -23,6 +23,12 @@ class AppMsgActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val calbtn = findViewById<ImageButton>(R.id.call_button)
+        calbtn.setOnClickListener {
+            val intent = Intent(this, AppCallScreen::class.java)
+            startActivity(intent)
+        }
+
 
 
     }
